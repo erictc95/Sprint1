@@ -1,4 +1,4 @@
-package exer2.cars;
+package cars;
 
 public class CarMain {
 }

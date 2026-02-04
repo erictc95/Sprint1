@@ -1,4 +1,4 @@
-package exer1.musical_instruments;
+package musical_instruments;
 
 public class StringInstrument extends Instrument{
 
