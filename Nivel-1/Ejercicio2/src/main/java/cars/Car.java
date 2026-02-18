@@ -22,11 +22,11 @@ public class Car {
     }
 
     public static void brake(){
-        System.out.println("El vehiculo esta frenando!");
+        System.out.println("The car is braking!");
     }
 
     public void accelerate() {
-        System.out.println("El vehiculo esta acelerando");
+        System.out.println("The car is accelerating");
     }
 
 }
