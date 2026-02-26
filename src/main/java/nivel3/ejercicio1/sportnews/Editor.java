@@ -1,4 +1,4 @@
-package sportnews;
+package nivel3.ejercicio1.sportnews;
 
 import java.util.ArrayList;
 
@@ -25,7 +25,7 @@ public class Editor {
         return salary;
     }
 
-    public ArrayList<News> getNoticias() {
+    public ArrayList<New> getNoticias() {
         return noticias;
     }
 
@@ -38,10 +38,10 @@ public class Editor {
     }
 
     public static void setSalary(double salary) {
-        Editors.salary = salary;
+        Editor.salary = salary;
     }
 
-    public void setNoticias(ArrayList<News> noticias) {
+    public void setNoticias(ArrayList<New> noticias) {
         this.noticias = noticias;
     }
 }

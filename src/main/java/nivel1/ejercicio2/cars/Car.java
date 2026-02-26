@@ -1,14 +1,13 @@
-package cars;
+package nivel1.ejercicio2.cars;
 
 public class Car {
 
     private static final String brand ="Lamborghini";
-    private String model;
-    private static int power;
+    private static String model;
+    private final int power = 450;
 
-    public Car(String model, int power) {
-        this.model = model;
-        Car.power = power;
+    public Car(String model) {
+        Car.model = model;
     }
 
 

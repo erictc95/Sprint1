@@ -1,4 +1,4 @@
-package smartphones;
+package nivel2.ejercicio1.smartphones;
 
 public class PhoneMain {
     public static void main(String[] args){

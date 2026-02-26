@@ -1,4 +1,4 @@
-package musical_instruments;
+package nivel1.ejercicio1.musical_instruments;
 
 public class StringInstrument extends Instrument{
 
@@ -10,7 +10,7 @@ public class StringInstrument extends Instrument{
         System.out.println("StringInstrument instance initializer block executed");
     }
 
-    public static StringInstrument(String name, double price) {
+    public StringInstrument(String name, double price) {
         super(name, price);
     }
 

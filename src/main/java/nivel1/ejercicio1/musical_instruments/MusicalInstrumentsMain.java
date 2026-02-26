@@ -1,4 +1,4 @@
-package musical_instruments;
+package nivel1.ejercicio1.musical_instruments;
 
 public class MusicalInstrumentsMain {
     public static void main(String[] args) {

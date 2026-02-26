@@ -1,4 +1,4 @@
-package sportnews;
+package nivel3.ejercicio1.sportnews;
 
 import java.sql.SQLOutput;
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ public class NewsMain {
     private static ArrayList<Editor> redactores = new ArrayList<>();
 
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
         while (caso != 8) {
             System.out.println("Este es el programa de -->ERIC TARRES CABRISAS<--");
             System.out.println();
@@ -98,9 +98,9 @@ public class NewsMain {
         System.out.println("DNI of Editor: ");
         String dniEditor = sc.nextLine();
 
-        Editors redactor = null;
+        Editor redactor = null;
         for (int i = 0; i < redactores.size(); i++) {
-            Editors e = redactores.get(i);
+            Editor e = redactores.get(i);
             if (e.getDni().equals(dniEditor)) {
                 redactor = e;
                 break;
@@ -134,7 +134,7 @@ public class NewsMain {
                         String club = sc.nextLine();
                         System.out.println("Player: ");
                         String jugador = sc.nextLine();
-                        News noticia = new Football(titular, competicio, club, jugador);
+                        New noticia = new Football(titular, competicio, club, jugador);
                         redactor.addNoticia(noticia);
                         break;
                     case 2:
@@ -191,9 +191,9 @@ public class NewsMain {
         System.out.println("DNI of Editor: ");
         String dniEditor = sc.nextLine();
 
-        Editors redactor = null;
+        Editor redactor = null;
         for (int i = 0; i < redactores.size(); i++) {
-            Editors e = redactores.get(i);
+            Editor e = redactores.get(i);
             if (e.getDni().equals(dniEditor)) {
                 redactor = e;
                 break;
@@ -202,7 +202,7 @@ public class NewsMain {
         if (redactor != null) {
             System.out.println("Titular: ");
             String titular = sc.nextLine();
-            ArrayList<News> noticias = redactor.getNoticias();
+            ArrayList<New> noticias = redactor.getNoticias();
             for (int i = 0; i < noticias.size(); i++) {
                 if (noticias.get(i).getTitular().equals(titular)) {
                     noticias.remove(i);
@@ -220,9 +220,9 @@ public class NewsMain {
         System.out.println("DNI of Editor: ");
         String dniEditor = sc.nextLine();
 
-        Editors redactor = null;
+        Editor redactor = null;
         for (int i = 0; i < redactores.size(); i++) {
-            Editors e = redactores.get(i);
+            Editor e = redactores.get(i);
             if (e.getDni().equals(dniEditor)) {
                 redactor = e;
                 break;
@@ -230,13 +230,13 @@ public class NewsMain {
         }
 
         if (redactor != null) {
-            ArrayList<News> noticias = redactor.getNoticias();
+            ArrayList<New> noticias = redactor.getNoticias();
             if (noticias.isEmpty()) {
                 System.out.println("This Editor hasn't News");
                 return;
             }
             for (int i = 0; i < noticias.size(); i++) {
-                News noticia = noticias.get(i);
+                New noticia = noticias.get(i);
                 System.out.println((i + 1) + ". " + noticia.getTitular() + " - Score: " + noticia.getScore() + " - Price: " + noticia.getPrice());
             }
         } else {
@@ -248,9 +248,9 @@ public class NewsMain {
         System.out.println("DNI of Editor: ");
         String dniEditor = sc.nextLine();
 
-        Editors redactor = null;
+        Editor redactor = null;
         for (int i = 0; i < redactores.size(); i++) {
-            Editors e = redactores.get(i);
+            Editor e = redactores.get(i);
             if (e.getDni().equals(dniEditor)) {
                 redactor = e;
                 break;
@@ -260,11 +260,11 @@ public class NewsMain {
             System.out.println("Titular: ");
             String titular = sc.nextLine();
 
-            ArrayList<News> noticias = redactor.getNoticias();
+            ArrayList<New> noticias = redactor.getNoticias();
 
             for (int i = 0; i < noticias.size(); i++) {
                 if (noticias.get(i).getTitular().equals(titular)) {
-                    News noticia = noticias.get(i);
+                    New noticia = noticias.get(i);
                     int score = noticia.calculateScore();
                     noticia.setScore(score);
                     System.out.println("Score calculated: " + score);
@@ -280,9 +280,9 @@ public class NewsMain {
         System.out.println("DNI of Editor: ");
         String dniEditor = sc.nextLine();
 
-        Editors redactor = null;
+        Editor redactor = null;
         for (int i = 0; i < redactores.size(); i++) {
-            Editors e = redactores.get(i);
+            Editor e = redactores.get(i);
             if (e.getDni().equals(dniEditor)) {
                 redactor = e;
                 break;
@@ -292,11 +292,11 @@ public class NewsMain {
             System.out.println("Titular: ");
             String titular = sc.nextLine();
 
-            ArrayList<News> noticias = redactor.getNoticias();
+            ArrayList<New> noticias = redactor.getNoticias();
 
             for (int i = 0; i < noticias.size(); i++) {
                 if (noticias.get(i).getTitular().equals(titular)) {
-                    News noticia = noticias.get(i);
+                    New noticia = noticias.get(i);
                     int price = noticia.calculatePrice();
                     noticia.setPrice(price);
                     System.out.println("Price calculated: " + price);

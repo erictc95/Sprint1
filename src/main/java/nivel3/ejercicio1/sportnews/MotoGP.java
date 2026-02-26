@@ -1,4 +1,4 @@
-package sportnews;
+package nivel3.ejercicio1.sportnews;
 
 public class MotoGP extends New{
     private String equip;

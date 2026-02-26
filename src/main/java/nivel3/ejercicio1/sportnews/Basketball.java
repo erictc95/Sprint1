@@ -1,4 +1,4 @@
-package sportnews;
+package nivel3.ejercicio1.sportnews;
 
 public class Basketball extends New{
     private String competicio;

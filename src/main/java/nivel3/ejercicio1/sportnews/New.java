@@ -1,4 +1,4 @@
-package sportnews;
+package nivel3.ejercicio1.sportnews;
 
 public abstract class New {
     private String titular;
