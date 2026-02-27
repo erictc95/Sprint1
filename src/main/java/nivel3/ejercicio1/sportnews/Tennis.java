@@ -12,20 +12,18 @@ public class Tennis extends New{
 
     @Override
     public int calculatePrice() {
-        int basePrice = 150;
-        int totalPrice = 0;
+        int totalPrice = 150;
         if (tenistes.equals("federer") || tenistes.equals("nadal") || tenistes.equals("djokovic")) {
-            totalPrice = basePrice + 100;
+            totalPrice += 100;
         }
         return totalPrice;
     }
 
     @Override
     public int calculateScore() {
-        int baseScore = 4;
-        int totalScore = 0;
+        int totalScore = 4;
         if (tenistes.equals("federer") || tenistes.equals("nadal") || tenistes.equals("djokovic")) {
-            totalScore = baseScore + 3;
+            totalScore += 3;
         }
         return totalScore;
     }

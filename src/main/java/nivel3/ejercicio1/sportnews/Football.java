@@ -1,6 +1,6 @@
 package nivel3.ejercicio1.sportnews;
 
-public class Football extends New{
+public class Football extends New {
     private String competicio;
     private String club;
     private String jugador;
@@ -14,30 +14,33 @@ public class Football extends New{
 
     @Override
     public int calculatePrice() {
-        int basePrice = 300;
-        int totalPrice = 0;
-        if (competicio.equals("champions league")){
-            totalPrice = basePrice + 100;
-        } else if (club.equals("barça") || club.equals("madrid")) {
-            totalPrice = basePrice + 100;
-        } else if (jugador.equals("ferran torres") || jugador.equals("benzema")) {
-            totalPrice = basePrice + 50;
+        int totalPrice = 300;
+        if (competicio.equals("champions league")) {
+            totalPrice += 100;
+        }
+        if (club.equals("barça") || club.equals("madrid")) {
+            totalPrice += 100;
+        }
+        if (jugador.equals("ferran torres") || jugador.equals("benzema")) {
+            totalPrice += 50;
         }
         return totalPrice;
     }
 
     @Override
     public int calculateScore() {
-        int baseScore = 5;
-        int totalScore = 0;
-        if (competicio.equals("champions league")){
-            totalScore = baseScore + 3;
-        } else if (competicio.equals("league")) {
-            totalScore = baseScore + 2;
-        } else if (club.equals("barça") || club.equals("madrid")) {
-            totalScore = baseScore + 1;
-        } else if (jugador.equals("ferran torres") || jugador.equals("benzema")) {
-            totalScore = baseScore + 1;
+        int totalScore = 5;
+        if (competicio.equals("champions league")) {
+            totalScore += 3;
+        }
+        if (competicio.equals("league")) {
+            totalScore += 2;
+        }
+        if (club.equals("barça") || club.equals("madrid")) {
+            totalScore += 1;
+        }
+        if (jugador.equals("ferran torres") || jugador.equals("benzema")) {
+            totalScore += 1;
         }
         return totalScore;
     }

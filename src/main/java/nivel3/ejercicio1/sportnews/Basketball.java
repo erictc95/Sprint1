@@ -14,24 +14,25 @@ public class Basketball extends New{
     public int calculatePrice() {
         int basePrice = 250;
         int totalPrice = 0;
-        if (competicio.equals("euroleague")){
+        if (competicio.equals("euroleague") && (club.equals("barça") || club.equals("madrid"))){
             totalPrice = basePrice + 75;
-        } else if (club.equals("barça") || club.equals("madrid")) {
-            totalPrice = basePrice + 75;
+        } else {
+            totalPrice = basePrice;
         }
         return totalPrice;
     }
 
     @Override
     public int calculateScore() {
-        int baseScore = 4;
-        int totalScore = 0;
+        int totalScore = 4;
         if (competicio.equals("euroleague")){
-            totalScore = baseScore + 3;
-        } else if (competicio.equals("acb")) {
-            totalScore = baseScore + 2;
-        } else if (club.equals("barça") || club.equals("madrid")) {
-            totalScore = baseScore + 1;
+            totalScore += 3;
+        }
+        if (competicio.equals("acb")) {
+            totalScore += 2;
+        }
+        if (club.equals("barça") || club.equals("madrid")) {
+            totalScore += 1;
         }
         return totalScore;
     }

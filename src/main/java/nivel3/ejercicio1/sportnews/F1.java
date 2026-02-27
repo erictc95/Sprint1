@@ -14,6 +14,8 @@ public class F1 extends New{
         int totalPrice = 0;
         if (escuderia.equals("ferrari") || escuderia.equals("mercedes")) {
             totalPrice = basePrice + 50;
+        } else {
+            totalPrice = basePrice;
         }
         return totalPrice;
     }
@@ -24,6 +26,8 @@ public class F1 extends New{
         int totalScore = 0;
         if (escuderia.equals("ferrari") || escuderia.equals("mercedes")) {
             totalScore = baseScore + 2;
+        } else {
+            totalScore = baseScore;
         }
         return totalScore;
     }
