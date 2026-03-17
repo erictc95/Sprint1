@@ -14,10 +14,11 @@ public class Basketball extends New{
     public int calculatePrice() {
         int basePrice = 250;
         int totalPrice = 0;
-        if (competicio.equals("euroleague") && (club.equals("barça") || club.equals("madrid"))){
+        if (competicio.equals("euroleague")){
             totalPrice = basePrice + 75;
-        } else {
-            totalPrice = basePrice;
+        }
+        if (club.equals("barça") || club.equals("madrid")){
+            totalPrice = basePrice + 75;
         }
         return totalPrice;
     }
