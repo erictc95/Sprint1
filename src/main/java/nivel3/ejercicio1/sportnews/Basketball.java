@@ -12,13 +12,12 @@ public class Basketball extends New{
 
     @Override
     public int calculatePrice() {
-        int basePrice = 250;
-        int totalPrice = 0;
+        int totalPrice = 250;
         if (competicio.equals("euroleague")){
-            totalPrice = basePrice + 75;
+            totalPrice += 75;
         }
         if (club.equals("barça") || club.equals("madrid")){
-            totalPrice = basePrice + 75;
+            totalPrice += 75;
         }
         return totalPrice;
     }
